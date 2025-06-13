@@ -2,14 +2,13 @@
 import unicodedata
 from thefuzz import fuzz
 from pprint import pprint
-import os, sys, subprocess, shlex, re
+import os, subprocess, re
 from glob import iglob, glob
-import mimetypes
 import csv
 import json
 import hashlib
 from langcodes import *
-import myx_classes
+from . import myx_classes
 
 ##ffprobe
 def probe_file(filename):

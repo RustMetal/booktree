@@ -3,8 +3,8 @@ import json
 import os
 import pickle
 from pprint import pprint
-import myx_classes
-import myx_utilities
+from . import  myx_classes
+from . import myx_utilities
 
 
 #MAM Functions

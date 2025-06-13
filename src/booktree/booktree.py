@@ -1,14 +1,11 @@
-from pathlib import Path
 from pprint import pprint
 from datetime import datetime
 from time import mktime
 from glob import iglob, glob
-import os, sys, subprocess, shlex, re
-import myx_classes
-import myx_audible
-import myx_utilities
-import myx_mam
-import myx_args
+import os, sys
+from . import myx_classes
+from . import myx_utilities
+from . import myx_args
 import csv
 import httpx
 
@@ -351,7 +348,7 @@ def main(cfg):
         else:
             print(f"Your source and media paths are invalid. Please check and try again!\nSource:{path}\nMedia:{mediaPath}")
 
-if __name__ == "__main__":
+def app():
     
     if not sys.version_info > (3, 10):
         print ("booktree requires python 3.10 or higher. Please upgrade your version")

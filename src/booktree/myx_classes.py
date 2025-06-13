@@ -10,9 +10,9 @@ import httpx
 import itertools
 from itertools import permutations 
 from pathvalidate import sanitize_filename
-import myx_utilities
-import myx_audible
-import myx_mam
+from . import myx_utilities
+from . import myx_audible
+from . import myx_mam
 
 #Module variables
 authMode="login"

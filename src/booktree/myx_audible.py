@@ -2,8 +2,8 @@ import os, sys, subprocess, shlex, re
 from subprocess import call
 from pprint import pprint
 import json
-import myx_utilities
-import myx_classes
+from . import myx_utilities
+from . import myx_classes
 
 def getAudibleBook(client, cfg, asin="", title="", authors="", narrators="", keywords="", language="english"):
     print (f"Searching Audible for\n\tasin:{asin}\n\ttitle:{title}\n\tauthors:{authors}\n\tnarrators:{narrators}\n\tkeywords:{keywords}")
