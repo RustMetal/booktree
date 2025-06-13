@@ -1,9 +1,8 @@
 
 import unicodedata
 from thefuzz import fuzz
-from pprint import pprint
 import os, subprocess, re
-from glob import iglob, glob
+from glob import iglob
 import csv
 import json
 import hashlib
